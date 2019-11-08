@@ -5,7 +5,7 @@
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <body>
-	<%@include file="./manupage.jsp" %>
+	<jsp:include page="./manupage.jsp" >
 	<%!String tag = "Web Shopping Mail"; %>
 	<div>
 		<div>
@@ -13,6 +13,6 @@
 		</div>
 	</div>
 	<p>
-		<a href="./productpage.jsp">상품목로으로 &raquo;</a>
+		<a href="./productspage.jsp">상품목로으로 &raquo;</a>
 </body>
 </html>

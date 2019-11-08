@@ -6,10 +6,10 @@
 <html>
 <head>
 <title>상품목록페이지</title>
-</head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
 <body>
-	<%@jsp:include page="./manupage.jsp" %>
+	<%@include file="./manupage.jsp" %>
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">상품목록</h1>
@@ -28,7 +28,9 @@
 			<div class="col-md-4">
 				<h3><%=product.getPname()%></h3>
 				<p><%=product.getDescription()%>
-				<p><%=product.getUnitprice()%>
+				<p><%=product.getUnitprice()%>원
+				<p>
+					<a href="./productpage.jsp">상세 정보 &raquo;</a>
 			</div>
 			<%
 				}
