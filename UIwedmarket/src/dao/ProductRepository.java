@@ -7,6 +7,15 @@ import dto.Product;
 public class ProductRepository{
 	
 	private ArrayList<Product> listofproducts = new ArrayList<Product>();
+	private static ProductRepository instance = new ProductRepository();
+	
+	public static ProductRepository getInstance(){
+		return instance;
+	}
+	
+	public void addproduct(Product product){
+		listofproducts.add(product);
+	}
 	
 	public ProductRepository(){
 		Product phone = new Product("P1234", "iPhone", 800000);
