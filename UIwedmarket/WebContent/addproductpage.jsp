@@ -5,7 +5,7 @@
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <body>
-	<jsp:include page="./manupage.jsp" >
+	<%@include file="./manupage.jsp" %>
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">상품등록</h1>
